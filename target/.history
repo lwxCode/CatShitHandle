@@ -1,0 +1,6 @@
+update
+exit
+update
+exit
+def foo = (100, "Unmi") 
+scala
