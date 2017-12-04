@@ -18,7 +18,7 @@ class RedisTool private(val url: String, val port: Int) {
     Try(pool.getResource()) match {
       case Failure(e) => {
         println(e.getMessage);
-        None
+        Some(null)
       }
       case Success(d) => {
         Some(d)

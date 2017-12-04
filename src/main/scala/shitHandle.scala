@@ -32,7 +32,7 @@ object shitHandle {
       if (RedisTool.set(date, (s, allDFormat.format(now)))) {
         println(date + "\r\n" + s)
       } else {
-        println("RedisFailed")
+        println("RedisFailed"+ "\r\n" + s)
       }
     }
   }
